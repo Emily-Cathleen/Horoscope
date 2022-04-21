@@ -30,12 +30,6 @@ handleChange = (event) => {
   this.setState({ [event.target.name]: event.target.value })
 }
 
-submitNewHoroscopeButton = (event) => {
-  event.preventDefault();
-     const newHoroscope = { ...this.state }
-     this.props.addHoroscope(newHoroscope);
-     this.clearInputs();
-}
 
 render() {
   return(
