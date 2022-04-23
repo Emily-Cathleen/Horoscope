@@ -1,15 +1,21 @@
 import React from "react"
-import { Link } from "react-router-dom";
-import "./SingleHoroscope.css"
+import { NavLink } from "react-router-dom";
+import "./SingleHoroscope.css";
+import Header from "../Header/Header";
 
-const SingleHoroscope = () => {
+
+const SingleHoroscope = ( {userHoroscope} ) => {
+
   return(
-    <header className="">
-      <div className="title">Mycologist Horoscope</div>
-    </header>
+    <div className="single-horoscope-contianer">
 
+     <img className="mushroom-image" src={userHoroscope.img_url} alt="mushroom picture"/>
+      {userHoroscope.sign}
+      {userHoroscope.name}
+
+    </div>
   )
 }
 
 
-export default Header
+export default SingleHoroscope
