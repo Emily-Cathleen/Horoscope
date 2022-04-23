@@ -3,38 +3,60 @@ import "./App.css";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
 import CreateHoroscopeForm from "../Form/CreateHoroscopeForm";
+import SingleHoroscope from "../SingleHoroscope/SingleHoroscope";
 import getHoroscopeData from "../../apiCalls";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      horoscopes: []
+      allHoroscopes: [],
+      userHoroscope: null
     }
   }
 
-componentDidMount = () => {
-  getHoroscopeData()
-  .then(data => this.setState({ horoscopes: data}))
-}
+  componentDidMount = () => {
+    getHoroscopeData()
+    .then(data => this.setState({ allHoroscopes: data.horoscopes}))
+  }
 
-getHoroscope = () => {
-  this.setState({ horoscopes: [...this.state.horoscopes ]});
-  console.log("FUCK")
-}
+  getHoroscope = (chosenSign) => {
+    const foundHoroscope = this.state.allHoroscopes.find(horoscope => {
+      if (horoscope.sign === chosenSign){
+        return horoscope
+      }
+    })
+    this.setState({ userHoroscope: foundHoroscope })
+  }
 
-addHoroscope = (newHoroscope) => {
-  this.setState({ horoscopes: [...this.state.horoscopes, newHoroscope] });
-  console.log("Horoscopes", this.state.horoscope)
-}
+  addHoroscope = (newHoroscope) => {
+    this.setState({ horoscopes: [...this.state.horoscopes, newHoroscope] });
+    console.log("Horoscopes", this.state.horoscope)
+  }
+
+  resetHome = () => {
+    return(
+    this.setState ({ userHoroscope: null})
+    )
+  }
 
 render() {
   return (
     <div className="App">
-    <Header />
-    <Form addHoroscope={this.state.horoscopes}/>
-    <CreateHoroscopeForm />
+    {this.state.userHoroscope !== null ? <Redirect to="/horoscope" /> : "" }
+    <Header resetHome={this.resetHome}/>
+    <Route exact path="/" >
+          <Form getHoroscope={this.getHoroscope}/>
+          <CreateHoroscopeForm addHoroscope={this.state.horoscopes}/>
+    </Route>
+      <Route exact path="/horoscope">
+          {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope}/> }
+
+       </Route>
+
     </div>
+
   );
 }
 
