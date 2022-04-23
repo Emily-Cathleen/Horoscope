@@ -12,6 +12,11 @@ class CreateHoroscopeForm extends Component {
     }
   }
 
+setSign = (event) => {
+    event.preventDefault();
+    this.setState({ sign: event.target.value });
+  }
+
 clearInputs = () => {
   this.setState({ month: '', sign: '', messages: '' });
     }
@@ -32,6 +37,27 @@ submitNewHoroscopeButton = (event) => {
       <form className = "form-container" >
         <section className="right-box">
           <div className="add-your-own-horoscope">Add your own horoscope</div>
+          <select className="sign-selector" onChange={this.setSign} id="month" name="month">
+            <option hidden>Select your Sign</option>
+            <option value="1">Aquarius</option>
+            <option value="2">Pisces</option>
+            <option value="3">Aries</option>
+            <option value="4">Taurus</option>
+            <option value="4">Gemini</option>
+            <option value="4">Cancer</option>
+            <option value="4">Leo</option>
+            <option value="4">Virgo</option>
+            <option value="4">Libra</option>
+            <option value="4">Scorpio</option>
+            <option value="4">Sagittarius</option>
+            <option value="4">Capricorn</option>
+
+
+
+
+
+
+          </select>
           <input className="input-field"
               type='text'
               placeholder='Enter your Horoscope Here'
