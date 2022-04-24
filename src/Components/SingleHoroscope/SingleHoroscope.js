@@ -4,7 +4,7 @@ import "./SingleHoroscope.css";
 import Header from "../Header/Header";
 
 
-const SingleHoroscope = ( {userHoroscope} ) => {
+const SingleHoroscope = ( { userHoroscope, saveHoroscope } ) => {
 
   return(
     <div className="single-horoscope-contianer">
@@ -16,10 +16,10 @@ const SingleHoroscope = ( {userHoroscope} ) => {
         <div className="mushroom-name">
           {userHoroscope.name}
         </div>
+        <button className="favorite" onClick={() => {saveHoroscope(userHoroscope)}}>SAVE</button>
       </div>
     </div>
   )
 }
-
 
 export default SingleHoroscope
