@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import Form from "../Form/Form";
 import CreateHoroscopeForm from "../Form/CreateHoroscopeForm";
 import SingleHoroscope from "../SingleHoroscope/SingleHoroscope";
+import LearnMore from "../LearnMore/LearnMore";
 import getHoroscopeData from "../../apiCalls";
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -52,7 +53,6 @@ render() {
     </Route>
       <Route exact path="/horoscope">
           {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope}/> }
-
        </Route>
 
     </div>
