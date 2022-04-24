@@ -10,7 +10,12 @@
 }
 html, body {
   height: 100%;
-  background: radial-gradient(circle, rgb(103 60 122) 0%, rgb(70 29 94) 44%, rgb(6 5 7) 100%);
+  background-image: url("mushroom.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: brightness(80%);
+  /* object-fit: cover; */
+  /* background: radial-gradient(circle, rgb(103 60 122) 0%, rgb(70 29 94) 44%, rgb(6 5 7) 100%); */
 }
 body {
   line-height: 1.5;

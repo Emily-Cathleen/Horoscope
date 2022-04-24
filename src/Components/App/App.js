@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "../Header/Header";
 import Form from "../Form/Form";
-import CreateHoroscopeForm from "../Form/CreateHoroscopeForm";
 import SingleHoroscope from "../SingleHoroscope/SingleHoroscope";
 import LearnMore from "../LearnMore/LearnMore";
+import SavedHoroscopes from "../SavedHoroscopes/SavedHoroscopes";
 import getHoroscopeData from "../../apiCalls";
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -13,7 +13,8 @@ class App extends Component {
     super();
     this.state = {
       allHoroscopes: [],
-      userHoroscope: null
+      userHoroscope: null,
+      favorites: []
     }
   }
 
@@ -31,9 +32,9 @@ class App extends Component {
     this.setState({ userHoroscope: foundHoroscope })
   }
 
-  addHoroscope = (newHoroscope) => {
-    this.setState({ horoscopes: [...this.state.horoscopes, newHoroscope] });
-    console.log("Horoscopes", this.state.horoscope)
+  saveHoroscope = (favoritedHoroscope) => {
+    const filteredThing = this.state.favorites.filter(favorite => favorite.sign === favoritedHoroscope.sign)
+    !filteredThing[0] && this.setState({ favorites: [...this.state.favorites, favoritedHoroscope ]});
   }
 
   resetHome = () => {
@@ -49,14 +50,14 @@ render() {
     <Header resetHome={this.resetHome}/>
     <Route exact path="/" >
           <Form getHoroscope={this.getHoroscope}/>
-          <CreateHoroscopeForm addHoroscope={this.state.horoscopes}/>
     </Route>
-      <Route exact path="/horoscope">
-          {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope}/> }
-       </Route>
-
+    <Route exact path="/horoscope">
+      {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope} saveHoroscope={this.saveHoroscope}/> }
+    </Route>
+    <Route exact path="/saved">
+      <SavedHoroscopes favorites={this.state.favorites} />
+    </Route>
     </div>
-
   );
 }
 

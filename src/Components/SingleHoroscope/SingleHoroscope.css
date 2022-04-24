@@ -1,19 +1,30 @@
-.single-horoscope-contianer {
+.single-horoscope-container {
   display: flex;
   flex-direction: row;
-  height: 80vh;
-  width: 100vw;
+  height: 64vh;
+  /* width: 100vw; */
   background-size: cover;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border: 2px solid green;
   object-fit: contain;
-  overflow: hidden;
+  /* overflow: hidden; */
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
 }
 
 .mushroom-image {
   display: flex;
+  object-fit: contain;
   width: 60%;
   height: 76%;
   /* backdrop-filter: blur(14px); */
@@ -22,7 +33,6 @@
 .horoscope-details-container {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle, rgb(103 60 122) 0%, rgb(70 29 94) 44%, rgb(6 5 7) 100%);
   backdrop-filter: blur(14px);
   border: 2px solid yellow;
   padding: 20px 20px 20px 20px;
@@ -32,11 +42,14 @@
   display: flex;
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-  border: 2px solid green;
+
 }
 
 .mushroom-name {
   display: flex;
   padding: 20px 0px 20px 0px;
-  border: 2px solid red;
+}
+
+.favorite-button {
+
 }

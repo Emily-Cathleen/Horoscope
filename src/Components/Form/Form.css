@@ -1,36 +1,32 @@
 .form-container {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
   margin-left: 4rem;
   margin-right: 4rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   flex-direction: row;
-  border: 2px solid pink;
 }
 
 .left-box {
   display: flex;
   align-items: center;
-  height: 20vh;
-  width: 30%;
-  border: 2px solid blue;
+  height: 30vh;
+  width: 40vw;
   flex-direction: column;
   margin-right: 4rem;
-
-
+  border: 2px solid blue;
+  backdrop-filter: blur(14px);
 }
 
 .right-box {
   display: flex;
   align-items: center;
-  height: 20vh;
-  width: 30%;
+  height: 30vh;
+  width: 40vw;
   border: 2px solid blue;
   flex-direction: column;
-  margin-left: 4rem;
-
+  backdrop-filter: blur(14px);
 }
 .month-selector {
   display: flex;
@@ -62,5 +58,5 @@
 }
 
 .sign-selector {
-  
+
 }
