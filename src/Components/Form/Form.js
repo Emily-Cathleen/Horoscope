@@ -167,7 +167,7 @@ render() {
           <option value="30">30</option>
           <option value="31">31</option>
         </select>
-        <button className="submit-button" onClick={event => this.getHoroscopeButton(event)}>Submit</button>
+        <button className="submit-button" disabled={!this.state.month, !this.state.day} onClick={event => this.getHoroscopeButton(event)}>Submit</button>
       </section>
     </form>
   )
