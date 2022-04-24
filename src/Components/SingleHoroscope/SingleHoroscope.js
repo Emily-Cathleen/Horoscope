@@ -7,7 +7,8 @@ import Header from "../Header/Header";
 const SingleHoroscope = ( { userHoroscope, saveHoroscope } ) => {
 
   return(
-    <div className="single-horoscope-contianer">
+    <div className="single-horoscope-container">
+    <div className="greeting"> {`Your sign is ${userHoroscope.sign}, happy shrooming! `} </div>
       <img className="mushroom-image" src={userHoroscope.img_url} alt="mushroom picture"/>
       <div className="horoscope-details-container">
         <div className="sign">
@@ -16,7 +17,7 @@ const SingleHoroscope = ( { userHoroscope, saveHoroscope } ) => {
         <div className="mushroom-name">
           {userHoroscope.name}
         </div>
-        <button className="favorite" onClick={() => {saveHoroscope(userHoroscope)}}>SAVE</button>
+        <button className="favorite-button" onClick={() => {saveHoroscope(userHoroscope)}}>SAVE</button>
       </div>
     </div>
   )
