@@ -6,7 +6,8 @@ import SavedCard from "./SavedCard";
 const SavedHoroscopes = ({ favorites }) => {
 const sortedHoroscopes = favorites.map(favorite => <SavedCard userHoroscope={favorite} key={favorite.sign} />)
   return(
-    <section>
+    <section className="sorted-horoscopes-container">
+    <h1>Here are all of your saved horoscopes:</h1>
     {sortedHoroscopes}
     </section>
   )
