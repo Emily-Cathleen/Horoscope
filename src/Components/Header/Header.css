@@ -8,8 +8,7 @@
   padding-right: 5rem;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.666);
   backdrop-filter: blur(14px);
-  /* height: 12vh; */
-  /* border: 2px solid green; */
+
 }
 
 .title {
@@ -24,5 +23,5 @@
 }
 
 .saved-horoscopes-button {
-  
+
 }
