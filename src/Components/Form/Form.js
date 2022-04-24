@@ -173,6 +173,6 @@ render() {
   )
 }
 
-}
+};
 
 export default Form
