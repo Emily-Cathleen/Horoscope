@@ -17,6 +17,7 @@ Welocome to a horoscope application for mushroom enthusiasts!
 
 ## API
 - I created and deployed my own API using Express.
+- [Link to API](https://mycology-horoscope-api.herokuapp.com/v1/monthlyData)
 - [API GitHub repository](https://github.com/Emily-Cathleen/showcase-api)
 
 ## Code Architechture and Project Spec
