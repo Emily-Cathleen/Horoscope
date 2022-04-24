@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+## 🌱 Mycology Horoscope 🍄
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welocome to a horoscope application for mushroom enthusiasts!
 
-## Available Scripts
+## Contributors
+- This project was completed at the Turing School of Software & Design by [Emily Corcoran](https://github.com/Emily-Cathleen)
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%purple)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API
+- I created and deployed my own API using Express.
+- [Link to API](https://mycology-horoscope-api.herokuapp.com/v1/monthlyData)
+- [API GitHub repository](https://github.com/Emily-Cathleen/showcase-api)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Code Architechture and Project Spec
+- If you want to know more about my code architecture, [click here](https://gist.github.com/Emily-Cathleen/b6c1acc42347e48c56e3da46d8f00f3c)
+- Project Structure Organized with [GitHub Project Board](https://github.com/Emily-Cathleen/Showcase/projects/1)
+- Turing Project Spec, [click here](https://frontend.turing.edu/projects/module-3/showcase.html)
 
-### `npm test`
+## Future Iterations
+ - To see a more in depth look at my future iterations, [click here](https://gist.github.com/Emily-Cathleen/bf2822d164dc04d02348792c0dc3c0ca)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges
+- I made the decision to handroll my own API. Having never used Express before, this proved to be time consuming and reasearch heavy.
 
-### `npm run build`
+## Wins
+-
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Ackowledgements
+[Kristen Bair](https://github.com/kristenmb)
