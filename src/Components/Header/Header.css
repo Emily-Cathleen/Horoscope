@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-left: 5rem;
   padding-top: 4rem;
@@ -13,7 +14,12 @@
 
 .title {
   display: flex;
+  justify-content: center;
+  color: #122625;
+}
+
+.button-container {
+  display: flex;
   border: 2px solid red;
-  color: green;
 
 }
