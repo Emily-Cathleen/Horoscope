@@ -1,4 +1,4 @@
-.single-horoscope-contianer {
+.single-horoscope-container {
   display: flex;
   flex-direction: row;
   height: 80vh;
@@ -9,9 +9,11 @@
   border: 2px solid green;
   object-fit: contain;
   overflow: hidden;
-
 }
 
+.greeting {
+  display: flex;
+}
 .mushroom-image {
   display: flex;
   object-fit: contain;
@@ -40,4 +42,8 @@
   display: flex;
   padding: 20px 0px 20px 0px;
   border: 2px solid red;
+}
+
+.favorite-button {
+
 }
