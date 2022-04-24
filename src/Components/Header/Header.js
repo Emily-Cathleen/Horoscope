@@ -10,6 +10,9 @@ const Header = ({ resetHome }) => {
       <Link to="/">
         <button className="home-button" onClick={() => {resetHome()}}>HOME</button>
       </Link>
+      <Link to="/learn">
+        <button className="learn-more-button" onClick={() => {resetHome()}}>Learn More</button>
+      </Link>
     </header>
 
   )
