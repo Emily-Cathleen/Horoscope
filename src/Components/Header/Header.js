@@ -15,7 +15,7 @@ const Header = ({ resetHome }) => {
           <button className="learn-more-button" onClick={() => {resetHome()}}>Learn More</button>
         </Link>
         <Link to="/saved">
-        <button className="favorite" >SAVED HOROSCOPES PAGE</button>
+        <button className="saved-horoscopes-button" >SAVED HOROSCOPES PAGE</button>
         </Link>
       </div>
     </header>
