@@ -98,8 +98,17 @@ findSign = (month, day) => {
   if (month === "10" && day >= 23 && day <= 31) {
     return 'Scorpio'
   }
-  if (month === "11" && day >= 23 && day <= 31) {
+  if (month === "11" && day >= 1 && day <= 22) {
     return 'Scorpio'
+  }
+  if (month === "11" && day >= 23 && day <= 31) {
+    return 'Sagittarius'
+  }
+  if (month === "12" && day >= 1 && day <= 21) {
+    return 'Sagittarius'
+  }
+  if (month === "12" && day >= 21 && day <= 31) {
+    return 'Sagittarius'
   }
 
 }
@@ -158,9 +167,7 @@ render() {
           <option value="30">30</option>
           <option value="31">31</option>
         </select>
-
         <button className="submit-button" onClick={event => this.getHoroscopeButton(event)}>Submit</button>
-
       </section>
     </form>
   )
