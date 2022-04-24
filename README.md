@@ -1,3 +1,4 @@
+
 ## 🌱 Mycology Horoscope 🍄
 
 Welocome to a horoscope application for mushroom enthusiasts!
@@ -36,3 +37,4 @@ Welocome to a horoscope application for mushroom enthusiasts!
 
 ## Ackowledgements
 [Kristen Bair](https://github.com/kristenmb)
+
