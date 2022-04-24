@@ -54,9 +54,7 @@ render() {
       <Route exact path="/horoscope">
           {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope}/> }
        </Route>
-
     </div>
-
   );
 }
 
