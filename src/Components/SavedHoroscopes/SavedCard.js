@@ -9,6 +9,9 @@ const SavedCard = ({ userHoroscope }) => {
         <div className="sign">
           {userHoroscope.sign}
         </div>
+        <div className="message">
+          {`You will be ${userHoroscope.messages}`}
+        </div>
         <div className="mushroom-name">
           {userHoroscope.name}
         </div>
