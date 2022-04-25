@@ -5,6 +5,7 @@ import Form from "../Form/Form";
 import SingleHoroscope from "../SingleHoroscope/SingleHoroscope";
 import LearnMore from "../LearnMore/LearnMore";
 import SavedHoroscopes from "../SavedHoroscopes/SavedHoroscopes";
+import PageNotFound from "../PageNotFound/PageNotFound";
 import getHoroscopeData from "../../apiCalls";
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -14,13 +15,15 @@ class App extends Component {
     this.state = {
       allHoroscopes: [],
       userHoroscope: null,
-      favorites: []
+      favorites: [],
+      error: false
     }
   }
 
   componentDidMount = () => {
     getHoroscopeData()
     .then(data => this.setState({ allHoroscopes: data.horoscopes}))
+    .catch(() => this.setState({error: true}))
   }
 
   getHoroscope = (chosenSign) => {
@@ -43,20 +46,31 @@ class App extends Component {
     )
   }
 
+
 render() {
   return (
     <div className="App">
-    {this.state.userHoroscope !== null ? <Redirect to="/horoscope" /> : "" }
-    <Header resetHome={this.resetHome}/>
-    <Route exact path="/" >
-          <Form getHoroscope={this.getHoroscope}/>
-    </Route>
-    <Route exact path="/horoscope">
-      {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope} saveHoroscope={this.saveHoroscope}/> }
-    </Route>
-    <Route exact path="/saved">
-      <SavedHoroscopes favorites={this.state.favorites} />
-    </Route>
+      {this.state.userHoroscope !== null ? <Redirect to="/horoscope" /> : "" }
+      <Header resetHome={this.resetHome}/>
+        <Switch>
+
+      <Route exact path="/" >
+         <Form getHoroscope={this.getHoroscope}/>
+      </Route>
+
+      <Route exact path="/horoscope">
+        {this.state.userHoroscope === null ? <Redirect to="/" /> : <SingleHoroscope userHoroscope={this.state.userHoroscope} saveHoroscope={this.saveHoroscope}/> }
+      </Route>
+
+      <Route exact path="/saved">
+        <SavedHoroscopes favorites={this.state.favorites} />
+      </Route>
+
+        <Route path="/*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+
     </div>
   );
 }
