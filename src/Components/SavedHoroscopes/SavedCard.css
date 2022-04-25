@@ -1,6 +1,28 @@
 .saved-card-container {
-  border: 5px solid red;
+  border: 3px solid red;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.sorted-horoscopes-container {
+
+}
+
+.details-container {
+  backdrop-filter: blur(14px);
+  border: 2px double rgb(73 199 178);
+  box-shadow: 0px 10px 15px rgb(8 34 79);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
