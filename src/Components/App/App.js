@@ -52,6 +52,7 @@ render() {
     <div className="App">
       {this.state.userHoroscope !== null ? <Redirect to="/horoscope" /> : "" }
       <Header resetHome={this.resetHome}/>
+
         <Switch>
 
       <Route exact path="/" >
