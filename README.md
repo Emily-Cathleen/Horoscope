@@ -13,13 +13,13 @@ Welcome to the wonderful world of mushrooms! Are you a mushroom enthusiast who a
 
 ![](https://media.giphy.com/media/w5NDypWf2i9U511BoT/giphy.gif)
 
-## Finding your zodiac sign by selecting your birthday:
+<!-- ## Finding your zodiac sign by selecting your birthday:
 
-![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif) -->
 
 ## Save your favorite horoscopes to view later:
 
-![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif)
+![](https://media.giphy.com/media/cx8Jw7jvspk4FhU6yd/giphy.gif)
 
 ## Tech Stack
 
