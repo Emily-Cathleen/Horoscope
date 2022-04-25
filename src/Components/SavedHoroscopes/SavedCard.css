@@ -1,8 +1,6 @@
 .saved-card-container {
   border: 3px solid red;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  display: flex;
   align-content: stretch;
   justify-content: space-evenly;
   align-items: center;
@@ -11,11 +9,10 @@
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  width: 40rem;
+  height: 17rem;
 }
 
-.sorted-horoscopes-container {
-
-}
 
 .details-container {
   backdrop-filter: blur(14px);
@@ -25,4 +22,6 @@
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 14rem;
+  height: 14rem;
 }

@@ -11,7 +11,7 @@
 html, body {
   height: 100%;
   background-image: url("mushroom.gif");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-color: brightness(80%);
   object-fit: cover;
