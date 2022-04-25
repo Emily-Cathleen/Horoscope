@@ -4,7 +4,7 @@
 Welcome to the wonderful world of mushrooms! Are you a mushroom enthusiast who also enjoys astrological phenomena? You have come to the right place. Settle in for a relaxing exploration of your zodiac sign while expanding your knowledge of Mycelium!
 
 ## Deployed Link
-- Check out the app [here!](http://afternoon-thicket-42176.herokuapp.com/)
+- Check out the app [here!](https://mycology-horoscope.herokuapp.com/)
 
 ## Contributors
 - This project was completed at the Turing School of Software & Design by [Emily Corcoran](https://github.com/Emily-Cathleen)
@@ -15,7 +15,7 @@ Welcome to the wonderful world of mushrooms! Are you a mushroom enthusiast who a
 
 ## Finding your zodiac sign by selecting your birthday:
 
-![](https://media.giphy.com/media/2gWuVL2RVxX5Xjz0bi/giphy.gif)
+![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif)
 
 ## Save your favorite horoscopes to view later:
 
