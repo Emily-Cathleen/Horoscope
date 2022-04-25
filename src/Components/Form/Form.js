@@ -26,7 +26,6 @@ setDay = (event) => {
 
 getHoroscopeButton = (event) => {
   event.preventDefault();
-  console.log("HII")
   const chosenSign = this.findSign(this.state.month, this.state.day);
   this.props.getHoroscope(chosenSign);
   //good place for error handling

@@ -2,10 +2,9 @@ import "./SavedCard.css";
 
 const SavedCard = ({ userHoroscope }) => {
   return(
-
     <div className="saved-card-container">
       <img className="mushroom-image" src={userHoroscope.img_url} alt="mushroom picture"/>
-      <div className="horoscope-details-container">
+      <div className="details-container">
         <div className="sign">
           {userHoroscope.sign}
         </div>
@@ -20,6 +19,6 @@ const SavedCard = ({ userHoroscope }) => {
 
   )
 
-}
+};
 
 export default SavedCard

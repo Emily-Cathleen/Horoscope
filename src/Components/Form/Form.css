@@ -15,8 +15,10 @@
   width: 40vw;
   flex-direction: column;
   margin-right: 4rem;
-  border: 2px solid blue;
+  border: 2px solid #362b64;
   backdrop-filter: blur(14px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.666);
+  border-radius: 2%;
 }
 
 .right-box {
@@ -28,6 +30,7 @@
   flex-direction: column;
   backdrop-filter: blur(14px);
 }
+
 .month-selector {
   display: flex;
   margin-bottom: 1rem;
@@ -39,10 +42,12 @@
   justify-content: center;
   box-shadow: 0px 5px 10px rgba(97, 97, 97, 0.687);
   width: 20vw;
+  margin-top: 1rem;
 }
 
 .instructions {
   color: white;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .add-your-own-horoscope {
@@ -58,5 +63,10 @@
 }
 
 .sign-selector {
-
 }
+
+/* MEDIA QUERIES */
+  /* @media screen and (max-width: 1400px) {
+    .form-container {
+      grid-template-columns: repeat(3, 1fr);
+    } */

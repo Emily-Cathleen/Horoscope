@@ -1,10 +1,25 @@
 
 ## 🌱 Mycology Horoscope 🍄
 
-Welocome to a horoscope application for mushroom enthusiasts!
+Welcome to the wonderful world of mushrooms! Are you a mushroom enthusiast who also enjoys astrological phenomena? You have come to the right place. Settle in for a relaxing exploration of your zodiac sign while expanding your knowledge of Mycelium!
+
+## Deployed Link
+- Check out the app [here!](http://afternoon-thicket-42176.herokuapp.com/)
 
 ## Contributors
 - This project was completed at the Turing School of Software & Design by [Emily Corcoran](https://github.com/Emily-Cathleen)
+
+## Home page:
+
+![](https://media.giphy.com/media/w5NDypWf2i9U511BoT/giphy.gif)
+
+## Finding your zodiac sign by selecting your birthday:
+
+![](https://media.giphy.com/media/2gWuVL2RVxX5Xjz0bi/giphy.gif)
+
+## Save your favorite horoscopes to view later:
+
+![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif)
 
 ## Tech Stack
 
@@ -21,7 +36,7 @@ Welocome to a horoscope application for mushroom enthusiasts!
 - [Link to API](https://mycology-horoscope-api.herokuapp.com/v1/monthlyData)
 - [API GitHub repository](https://github.com/Emily-Cathleen/showcase-api)
 
-## Code Architechture and Project Spec
+## Code Architecture and Project Spec
 - If you want to know more about my code architecture, [click here](https://gist.github.com/Emily-Cathleen/b6c1acc42347e48c56e3da46d8f00f3c)
 - Project Structure Organized with [GitHub Project Board](https://github.com/Emily-Cathleen/Showcase/projects/1)
 - Turing Project Spec, [click here](https://frontend.turing.edu/projects/module-3/showcase.html)
@@ -30,11 +45,13 @@ Welocome to a horoscope application for mushroom enthusiasts!
  - To see a more in depth look at my future iterations, [click here](https://gist.github.com/Emily-Cathleen/bf2822d164dc04d02348792c0dc3c0ca)
 
 ## Challenges
-- I made the decision to handroll my own API. Having never used Express before, this proved to be time consuming and reasearch heavy.
+- I made the decision to hand roll my own API. Having never used Express before, this proved to be time consuming and research dense.
+- Route and Link did not work as intended. This required an intense period of research which took away from being able to add a horoscope.
 
 ## Wins
--
+- Learning Express in 5 days and creating my own API.
+- Although the design of this project needs some refining, I had a blast making it and learned some really interesting design techniques.
 
-## Ackowledgements
+
+## Acknowledgements
 [Kristen Bair](https://github.com/kristenmb)
-
