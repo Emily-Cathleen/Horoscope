@@ -8,20 +8,35 @@
   padding-right: 5rem;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.666);
   backdrop-filter: blur(14px);
-
 }
 
 .title {
   display: flex;
+  margin-right: 1rem;
   justify-content: center;
-  color: #122625;
+  background: -webkit-linear-gradient(#e5209b, #f2f1f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000001a;
+  /* color: #122625; */
 }
 
 .button-container {
   display: flex;
-  border: 2px solid red;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 2px double rgb(73 199 178);
+  box-shadow: 0px 10px 15px rgb(8 34 79);
+}
+
+.home-button {
+  margin-right: 1rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.666);
 }
 
 .saved-horoscopes-button {
-
+  margin-left: 1rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.666);
 }
