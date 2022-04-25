@@ -15,7 +15,7 @@ Welcome to the wonderful world of mushrooms! Are you a mushroom enthusiast who a
 
 ## Finding your zodiac sign by selecting your birthday:
 
-![](https://media.giphy.com/media/2gWuVL2RVxX5Xjz0bi/giphy.gif)
+![](https://media.giphy.com/media/LU3c4ujxKF4nCpfYAA/giphy-downsized-large.gif)
 
 ## Save your favorite horoscopes to view later:
 
