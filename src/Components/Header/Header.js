@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 const Header = ({ resetHome }) => {
   return(
     <header className="header">
-      <h1 className="title">Mycologist Horoscope</h1>
+      <h1 className="title">Mycology Horoscope</h1>
       <div className="button-container">
         <Link to="/">
           <button className="home-button" onClick={() => {resetHome()}}>HOME</button>
         </Link>
         <Link to="/saved">
-        <button className="saved-horoscopes-button" >SAVED HOROSCOPES PAGE</button>
+        <button className="saved-horoscopes-button" >VIEW FAVORITES</button>
         </Link>
       </div>
     </header>
