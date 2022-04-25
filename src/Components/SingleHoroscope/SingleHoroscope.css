@@ -6,11 +6,13 @@
   background-size: cover;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
   object-fit: contain;
   /* overflow: hidden; */
   margin-left: 3rem;
   margin-right: 3rem;
+  padding-right: 1rem;
+  border: 2px double rgb(73 199 178);
+  box-shadow: 0px 10px 15px rgb(8 34 79);
 }
 
 .greeting {
@@ -36,13 +38,13 @@
   backdrop-filter: blur(14px);
   border: 2px solid yellow;
   padding: 20px 20px 20px 20px;
+  align-items: center;
 }
 
 .sign {
   display: flex;
   padding: 20px 0px 20px 0px;
   margin-bottom: 20px;
-
 }
 
 .mushroom-name {
@@ -51,5 +53,6 @@
 }
 
 .favorite-button {
-
+ width: 11vw;
+ border-radius: 4%;
 }
