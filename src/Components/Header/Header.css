@@ -21,13 +21,13 @@
 }
 
 .button-container {
+  background-color: #ca348894;
   display: flex;
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 2px double rgb(73 199 178);
   box-shadow: 0px 10px 15px rgb(8 34 79);
 }
 
